@@ -1,0 +1,9 @@
+# JobPost API endpoints
+
+content_types_greenhouse_job_post.count:
+  path: '/job_post_api/get_count'
+  defaults:
+    _controller: '\Drupal\drupal8_greenhouse\Controller\JobPostAPIController::get_job_count'
+    _title: 'Job post count'
+  requirements:
+    _permission: 'access content'
